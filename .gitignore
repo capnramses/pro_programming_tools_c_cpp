@@ -52,6 +52,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Project Settings
+.vscode
+
 # Output From Example Programs
 out.ppm
 out2.ppm
+results.txt
