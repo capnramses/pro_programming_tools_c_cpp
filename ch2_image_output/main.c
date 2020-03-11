@@ -5,8 +5,8 @@ Licence:    see LICENSE.txt in repository root.
 Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 */
 
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 void draw_pixel( uint8_t* image_ptr, int width, int n_channels, int x, int y, uint8_t r, uint8_t g, uint8_t b ) {

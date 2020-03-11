@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Output From Example Programs
+ch2_image_output/out.ppm
