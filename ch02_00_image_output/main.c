@@ -24,8 +24,8 @@ int main() {
   // paint half the image image (or edit whatever you like here)
   for ( int y = 0; y < height; y++ ) {
     for ( int x = 0; x < width / 2; x++ ) {
-      int pixel_idx = n_channels * ( y * width + x );
-      image_ptr[pixel_idx + 0] = 255;     // red
+      int pixel_idx            = n_channels * ( y * width + x );
+      image_ptr[pixel_idx + 0] = 255; // red
       image_ptr[pixel_idx + 2] = 255; // blue
     }
   }
@@ -41,10 +41,10 @@ int main() {
     fprintf( fptr, "P6\n" );
     fprintf( fptr, "%i %i\n", width, height );
     fprintf( fptr, "255\n" );
-        
+
     // write body (binary RGB image data)
     fwrite( image_ptr, 1, width * height * n_channels, fptr );
-            
+
     fclose( fptr );
   }
   free( image_ptr );
