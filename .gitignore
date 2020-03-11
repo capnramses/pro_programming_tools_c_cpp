@@ -60,3 +60,5 @@ out.ppm
 out2.ppm
 results.txt
 build/
+fuzzer_outputs/
+*.s
