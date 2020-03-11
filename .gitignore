@@ -53,4 +53,5 @@ Mkfile.old
 dkms.conf
 
 # Output From Example Programs
-ch2_image_output/out.ppm
+out.ppm
+out2.ppm
