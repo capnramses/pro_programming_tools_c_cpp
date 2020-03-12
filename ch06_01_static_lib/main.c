@@ -4,7 +4,7 @@ Licence:    see LICENSE.txt in repository root.
 Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 
 To create a static lib from second.c
-	gcc -c second.c -o second.o
+  gcc -c second.c -o second.o
   ar cr libsecond.a second.o
 
 Compiles a program with
