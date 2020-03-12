@@ -9,6 +9,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 
 // includes for precision timers on differnet platforms
 #ifdef _WIN32
+#include <windows.h>
 #include <profileapi.h>
 #elif __APPLE__
 #include <mach/mach_time.h>
@@ -21,7 +22,7 @@ uint64_t frequency = 1000000, offset;
 
 // initialise timer variables for build's platform
 void init_timer() {
-#ifdef __WIN32
+#ifdef _WIN32
   {
     uint64_t counter;
     frequency = 1000; // QueryPerformanceCounter default
@@ -47,7 +48,7 @@ void init_timer() {
 
 // get the current time in seconds with up to nanosecond precision
 double get_seconds() {
-#ifdef __WIN32
+#ifdef _WIN32
   {
     uint64_t counter = 0;
     QueryPerformanceCounter( (LARGE_INTEGER*)&counter );
