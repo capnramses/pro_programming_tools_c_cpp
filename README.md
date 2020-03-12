@@ -29,7 +29,7 @@ Please refer to LICENSE.txt.
 
 ## Help, Questions, Bug Reports
 
-Please feel free to use the Issues tab on this GitHub project to ask for help or to report bugs. If frequent questions pop up we will create a FAQ section on this README.
+Please feel free to use the [https://github.com/capnramses/pro_programming_tools_c_cpp/issues](Issues) tab on this GitHub project to ask for help or to report bugs. If frequent questions pop up we will create a FAQ section on this README.
 
 ## Contributions and Pull Requests
 
