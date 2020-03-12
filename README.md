@@ -2,7 +2,7 @@
 
 Code samples from the book *Professional Programming Tools for C and C++* by Anton Gerdelan and Katja Žibrek.
 
-## Repository Structure
+## How to use this Repository
 
 * This repository is split into folders, one for each code example.
 * Folders are numbered after the corresponding book chapter, and then by order of appearance within the chapter.
