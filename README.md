@@ -39,3 +39,4 @@ Some rough guidelines for making a PR:
 * Please do not submit project or solution files for a particular IDE.
 * Code in examples is copy-pasted from the book. If the PR needs to modify these please add a comment to those lines indicating why the change was important.
 * Code style and language version changes are discouraged unless they fix a bug.
+* In your PR please indicate if you are happy to be added to a contributors list, and if so the name and/or handle you would like to use.
