@@ -26,6 +26,10 @@ In Visual Studio create a new project and drag the appropriate `.c` files into y
 
 Please refer to LICENSE.txt.
 
+## Help, Questions, Bug Reports
+
+Please feel free to use the Issues tab on this GitHub project to ask for help or to report bugs. If frequent questions pop up we will create a FAQ section on this README.
+
 ## Contributions and Pull Requests
 
 Please feel encouraged to make a pull request to correct or clarify code.
