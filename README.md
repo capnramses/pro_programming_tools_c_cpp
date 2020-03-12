@@ -20,7 +20,7 @@ gcc -o my_program main.c
 ./my_program
 ```
 
-In Visual Studio create a new project and drag the appropriate `.c` files into your source code tree before building.
+For Microsoft Visual Studio create a new, empty, C++ desktop project and drag the appropriate `.c` files into your source code tree before building.
 
 ## License
 
