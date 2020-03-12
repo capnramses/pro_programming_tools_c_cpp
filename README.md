@@ -15,7 +15,7 @@ Some examples have a `main.cpp` and should be compiled with a C++ compiler.
 For example, to build the first assertions example with GCC and run it from a terminal:
 
 ```
-cd ch1_00_assertions
+cd ch01_00_assertions
 gcc -o my_program main.c
 ./my_program
 ```
