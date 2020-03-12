@@ -8,7 +8,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 #include <stdint.h>
 
 // includes for precision timers on differnet platforms
-#ifdef __WIN32
+#ifdef _WIN32
 #include <profileapi.h>
 #elif __APPLE__
 #include <mach/mach_time.h>
