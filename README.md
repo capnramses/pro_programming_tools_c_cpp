@@ -25,6 +25,7 @@ For Microsoft Visual Studio:
 
 * Create a new, empty, C++ **console** (not Desktop) project.
 * Drag the appropriate `.c` files into your source code tree before building.
+* When compiling Visual Studio will prompt you to switch to its safer versions of some functions, or disable the warning.
 
 ## License
 
