@@ -25,7 +25,7 @@ For Microsoft Visual Studio create a new, empty, C++ desktop project and drag th
 
 ## License
 
-Please refer to LICENSE.txt.
+Please refer to `LICENSE.txt`.
 
 > This is free and unencumbered software released into the public domain.
 > 
