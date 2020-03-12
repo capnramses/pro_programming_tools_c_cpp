@@ -1,6 +1,7 @@
 # Professional Programming Tools for C and C++: Example Code
 
 Code samples from the book *Professional Programming Tools for C and C++* by Anton Gerdelan and Katja Žibrek.
+The book landing page is at antongerdelan.net/pro_programming_tools_book/
 
 ## How to use this Repository
 
