@@ -3,6 +3,7 @@ Author:     Dr Anton Gerdelan.
 Licence:    see LICENSE.txt in repository root.
 Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 */
+#include "second.h" // include any symbol 'export' from the declarations
 #include <stdio.h>
 
 void second() {
