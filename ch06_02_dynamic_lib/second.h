@@ -24,4 +24,4 @@ EXPORT_SEC void second();
 }
 #endif
 
-#endif // you can replace all three #...  with just `#pragma once` at the top
+#endif // SECOND_H_
