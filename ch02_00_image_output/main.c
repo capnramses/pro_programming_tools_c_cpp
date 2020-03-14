@@ -50,3 +50,4 @@ int main() {
   free( image_ptr );
   return 0;
 }
+

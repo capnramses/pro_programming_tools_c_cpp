@@ -38,6 +38,10 @@ struct image_t ppm_read( const char* filename ) {
     while ( fgets( line, 2048, fptr ) ) {
       if ( line[0] == '#' ) { continue; } // skip comments added by GIMP etc
       int n = sscanf( line, "%i %i\n", &image.width, &image.height );
+      if ( 2 != n ) {
+        fclose( fptr );
+        return image;
+      }
       fgets( line, 2048, fptr ); // ignore max_val
       break;
     }

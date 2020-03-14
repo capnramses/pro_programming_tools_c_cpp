@@ -141,3 +141,4 @@ void image_write_binary_ppm( const char* filename, struct image_t image ) {
   }
   fclose( fptr );
 }
+

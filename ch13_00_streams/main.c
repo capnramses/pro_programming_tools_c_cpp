@@ -89,7 +89,6 @@ int main() {
 
   /* repeat writing data to stdout until whole buffer is written */
   {
-    ssize_t n        = 0;
     int fd           = fileno( stdout ); // stdout
     size_t n_written = 0;
 
