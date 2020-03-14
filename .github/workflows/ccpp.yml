@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: build_all
 
 on:
   push:
@@ -13,5 +13,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: build_all
-      run: ./build_all.sh
+    - name: build_all_clang
+      run: ./build_all_clang.sh
+    - name: build_all_gcc
+      run: ./build_all_gcc.sh
