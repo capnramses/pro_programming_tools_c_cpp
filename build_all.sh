@@ -1,6 +1,10 @@
 #!/bin/bash
 # Author: Anton Gerdelan
 # Folders with deliberate errors have builds commented out so that this script can be used for CI checks.
+
+# any error code causes script to exit with error code
+set -e
+
 CC=clang
 CPPC=g++
 FLAGS="-Wall -Wextra -pedantic -fsanitize=address -fsanitize=undefined"
