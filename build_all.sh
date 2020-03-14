@@ -4,10 +4,14 @@
 
 # any error code causes script to exit with error code
 set -e
+# echo everything
+set -x
+
+echo on
 
 CC=clang
-CPPC=g++
-FLAGS="-Wall -Wextra -pedantic -fsanitize=address -fsanitize=undefined"
+CPP=clang++
+FLAGS="-Wall -Wextra -Werror -pedantic -fsanitize=address -fsanitize=undefined"
 
 echo "cd ch00_00_c/"
 cd ch00_00_c/
@@ -15,11 +19,11 @@ $CC $FLAGS main.c
 
 echo "cd ../ch00_01_cpp_malloc/"
 cd ../ch00_01_cpp_malloc/
-$CPPC $FLAGS main.cpp
+$CPP $FLAGS main.cpp
 
 echo "cd ../ch00_02_cpp_new_delete/"
 cd ../ch00_02_cpp_new_delete/
-$CPPC $FLAGS main.cpp
+$CPP $FLAGS main.cpp
 
 echo "cd ../ch01_00_assertions/"
 cd ../ch01_00_assertions/
@@ -79,9 +83,16 @@ bash build.sh
 
 echo "cd ../ch06_02_dynamic_lib/"
 cd ../ch06_02_dynamic_lib/
-bash build_export_rpath.sh
-bash build_flag_rpath.sh
-bash build_linux.sh
+# -fPIC to let us call printf() from the library with Clang
+$CC $FLAGS -fPIC -c second.c -o second.o
+$CC $FLAGS -shared second.o -o lib/libsecond.so
+# basic version
+$CC $FLAGS main.c -Llib/ -lsecond
+# flag rpath version
+$CC $FLAGS main.c -Llib/ -lsecond -Wl,-rpath,\$ORIGIN/lib/
+# export rpath version
+export LD_RUN_PATH=\$ORIGIN/lib/
+$CC $FLAGS main.c -lsecond -Llib/
 
 echo "cd ../ch06_03_makefile/"
 cd ../ch06_03_makefile/
