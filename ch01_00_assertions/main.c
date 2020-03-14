@@ -25,6 +25,8 @@ void my_str_truncate( char* str, int str_len, int str_index ) {
   str[str_index] = '\0';
 }
 
+deliberate error to see if CI works
+
 int main() {
   char name[10];
   strncpy( name, "anton", 10 );
