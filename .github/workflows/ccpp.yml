@@ -8,12 +8,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ${{ matrix.os }}
-		strategy:
-			matrix:
-				os: [ubuntu-latest, macOS-latest]
-    
+    strategy:
+      matrix:
+          os: [ubuntu-latest, macOS-latest]
     steps:
     - uses: actions/checkout@v2
     - name: build_all_clang
