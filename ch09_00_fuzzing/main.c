@@ -19,26 +19,25 @@ or to run and ignore warnings run the script I made:
 #include <string.h>
 
 int main( int argc, char** argv ) {
-  char file_in[1024], file_out[1024];
-  strncpy( file_in, "in.ppm", 1023 );
-  strncpy( file_out, "out.ppm", 1023 );
-  if ( argc > 1 ) { strncpy( file_in, argv[1], 1023 ); }
-  if ( argc > 2 ) { strncpy( file_in, argv[2], 1023 ); }
+  const char* file_in  = "in.ppm";
+  const char* file_out = "out.ppm";
+  if (argc > 1) { file_in = argv[1]; }
+  if (argc > 2) { file_out = argv[2]; }
 
   // i want to test this function that reads an image
-  struct image_t image = ppm_read( file_in );
-  if ( !image.ptr ) {
+  struct image_t my_image = ppm_read( file_in );
+  if ( !my_image.ptr ) {
     fprintf( stderr, "ERROR: could not read image `%s`\n", file_in );
     return 1;
   }
 
   // and i'll secondarily make sure the writer works afterwards
-  bool success = ppm_write( file_out, image );
+  bool success = ppm_write( file_out, my_image );
   if ( !success ) {
     fprintf( stderr, "ERROR: could not write image `%s`\n", file_out );
     return 1;
   }
 
-  free( image.ptr );
+  free( my_image.ptr );
   return 0;
 }
