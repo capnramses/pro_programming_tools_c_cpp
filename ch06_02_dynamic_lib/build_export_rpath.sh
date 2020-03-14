@@ -1,4 +1,9 @@
 #!/bin/bash
+# Author: Anton Gerdelan
+
+# any error code causes script to exit with error code
+set -e
+
 #compile second.c
 gcc -c second.c -o second.o
 #create a shared object lib (dynamically linked library) from second.o
