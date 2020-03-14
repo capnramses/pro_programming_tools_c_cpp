@@ -14,6 +14,6 @@ int main() {
     return 1;                                                    // exit program with error code 1
   }
   std::cout << "allocated " << 16 * sizeof( int ) << " bytes, starting at address " << my_pointer << std::endl;
-  delete my_pointer;
+  delete[] my_pointer;
   return 0;
 }
