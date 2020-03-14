@@ -1,4 +1,4 @@
-name: ccpp
+name: build_all
 
 on:
   push:
