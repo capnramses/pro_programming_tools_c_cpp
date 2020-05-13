@@ -79,4 +79,4 @@ Some rough guidelines for making a PR:
 
 ## Contributors
 
-* [Anton Gerdelan](https://github.com/capnramses)
+* [Anton Gerdelan](https://github.com/capnramses) - Initial code.
