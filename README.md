@@ -76,3 +76,7 @@ Some rough guidelines for making a PR:
 * Code in examples is copy-pasted from the book. If the PR needs to modify these please add a comment to those lines indicating why the change was important.
 * Code style and language version changes are discouraged unless they fix a bug.
 * If you are happy to be added to a contributors list then please add your name, as you would like it to appear, as a bullet at the bottom of this file.
+
+## Contributors
+
+* [Anton Gerdelan](https://github.com/capnramses)
