@@ -27,7 +27,7 @@ For Microsoft Visual Studio:
 
 * Create a new, empty, C++ **console** (not Desktop) project.
 * Drag the appropriate `.c` files into your source code tree before building.
-* When compiling Visual Studio will prompt you to switch to its safer versions of some functions, or disable the warning.
+* When compiling, Visual Studio will prompt you to switch to its safer versions of some functions, or disable the warning.
 
 ## License
 
@@ -69,8 +69,8 @@ Please feel encouraged to make a pull request (PR) to correct or clarify code.
 Some rough guidelines for making a PR:
 
 * Bug fixes and operating-system specific fixes are very welcome.
-* When making a PR please make sure both the PR and the code is commented clearly for other book readers.
-* Do not introduce code copy-pasted from elsewhere as there are licencing and copyright issues with this.
+* When making a PR please make sure both the PR, and the code, is commented clearly for other book readers.
+* Do not introduce code copy-pasted from elsewhere as there are licensing and copyright issues with this.
 * Please do not submit `CMakeLists.txt` or build scripts for the entire book or for individual chapters. There is a specific chapter dedicated to introducing build systems.
 * Please do not submit project or solution files for a particular IDE.
 * Code in examples is copy-pasted from the book. If the PR needs to modify these please add a comment to those lines indicating why the change was important.
