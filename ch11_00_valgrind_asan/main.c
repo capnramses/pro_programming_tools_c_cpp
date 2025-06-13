@@ -22,7 +22,7 @@ void my_func() {
               // memory is not freed
 }
 
-int main() {
+int main( void ) {
   my_func();
   return 0;
 }

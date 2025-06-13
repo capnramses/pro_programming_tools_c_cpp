@@ -28,7 +28,7 @@ for building with IDEs:
 #include "second.h" // copy in declarations of functions from second.c
 #include <stdio.h>
 
-int main() {
+int main( void ) {
   printf( "hi from main()!\n" );
   second();
 

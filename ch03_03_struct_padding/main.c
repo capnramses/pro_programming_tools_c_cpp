@@ -44,7 +44,7 @@ struct file_record_t read_file( const char* filename ) {
   return record;
 }
 
-int main() {
+int main( void ) {
   struct file_record_t record = read_file( FILE_IN );
   if ( !record.data ) {
     fprintf( stderr, "ERROR: reading file `%s`\n", FILE_IN );

@@ -70,7 +70,7 @@ bool ppm_write( const char* filename, struct image_t image ) {
   return true;
 }
 
-int main() {
+int main( void ) {
   struct image_t image = ppm_read( FILE_IN );
   if ( !image.ptr ) {
     fprintf( stderr, "ERROR:reading image from `%s`\n", FILE_IN );

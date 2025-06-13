@@ -70,7 +70,7 @@ double get_seconds() {
   return 0.0;
 }
 
-int main() {
+int main( void ) {
   init_timer();
 
   double start_s = get_seconds();

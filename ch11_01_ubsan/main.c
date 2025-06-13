@@ -11,7 +11,7 @@ Run:
 
 #include <stdio.h>
 
-int main() {
+int main( void ) {
   int b = -1;
   b     = b << 1; // shift a negative number
   printf( "b = %i\n", b );

@@ -6,7 +6,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 
 #include <stdio.h>
 
-int main() {
+int main( void ) {
   int array[3] = { 10, 11, 12 };
   printf( "array[4] = %i\n", array[4] );
   return 0;

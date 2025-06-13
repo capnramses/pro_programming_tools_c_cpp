@@ -34,7 +34,7 @@ void parent() {
   child();
 }
 
-int main() {
+int main( void ) {
   parent();
 
   return 0;

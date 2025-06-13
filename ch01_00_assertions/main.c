@@ -25,7 +25,7 @@ void my_str_truncate( char* str, int str_len, int str_index ) {
   str[str_index] = '\0';
 }
 
-int main() {
+int main( void ) {
   char name[10];
   strncpy( name, "anton", 10 );
   int new_length = 3;                      // try changing to a number >= 10

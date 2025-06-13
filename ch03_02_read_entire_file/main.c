@@ -29,7 +29,7 @@ struct file_record_t read_file( const char* filename ) {
   return record;
 }
 
-int main() {
+int main( void ) {
   struct file_record_t record = read_file( "in.ppm" );
   if ( !record.data ) {
     fprintf( stderr, "ERROR: reading file `in.ppm`\n" );

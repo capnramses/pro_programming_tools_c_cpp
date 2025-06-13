@@ -7,7 +7,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 #include <stdio.h>  /* contains printf() */
 #include <stdlib.h> /* contains malloc() and free() */
 
-int main() {
+int main( void ) {
   int* my_pointer = malloc( 16 * sizeof( int ) );           // C does not require you to explicitly cast the return type of malloc()
   if ( !my_pointer ) {                                      // if malloc() returned NULL then something went wrong
     fprintf( stderr, "ERROR: memory allocation failed\n" ); // print to standard error output stream

@@ -19,7 +19,7 @@ void run_tests() {
   }
 }
 
-int main() {
+int main( void ) {
   run_tests();
   return 0;
 }

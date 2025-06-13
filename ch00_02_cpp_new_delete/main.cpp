@@ -7,7 +7,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 */
 #include <iostream> // contains cout and cerr
 
-int main() {
+int main( void ) {
   int* my_pointer = new int[16];
   if ( !my_pointer ) {                                           // if malloc() returned NULL then something went wrong
     std::cerr << "ERROR: memory allocation failed" << std::endl; // print to standard error output stream

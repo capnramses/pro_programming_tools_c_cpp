@@ -10,7 +10,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 
 #define FILE_IN "in.ppm"
 
-int main() {
+int main( void ) {
   const char* filename = "in.ppm";
 
   FILE* fptr = fopen( filename, "rb" ); // ‘rb’ is ‘read binary’

@@ -41,7 +41,7 @@ and the pipe `|` directs this to the stdin of ./a.out
 #include <stdint.h> // for uint8_t
 #include <string.h> // for memcpy()
 
-int main() {
+int main( void ) {
   printf( "test line to stdout\n" );
   fprintf( stderr, "test line to stderr\n" );
   printf( "this program reads from stdin. either type something in or pipe something in from another command.\n" );

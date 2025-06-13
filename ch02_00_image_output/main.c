@@ -16,7 +16,7 @@ void draw_pixel( uint8_t* image_ptr, int width, int n_channels, int x, int y, ui
   image_ptr[pixel_idx + 2] = b;
 }
 
-int main() {
+int main( void ) {
   int width = 256, height = 128, n_channels = 3;
   // allocate memory. calloc() sets all our memory to zero (black)
   uint8_t* image_ptr = calloc( 1, width * height * n_channels );

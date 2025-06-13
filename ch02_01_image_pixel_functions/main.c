@@ -40,7 +40,7 @@ void write_ppm_bin( const char* filename, struct image_t image ) {
   fclose( f_ptr );
 }
 
-int main() {
+int main( void ) {
   struct image_t image;
   image.width = image.height = 512;
   image.n_channels           = 3;

@@ -19,7 +19,7 @@ float lerpf( float x, float x_i, float x_f, float y_i, float y_f ) {
   return y_r * y + y_i;
 }
 
-int main() {
+int main( void ) {
   { // do an image with a chart
     const int width = 32, height = 24, n_channels = 3;
     struct image_t image = image_alloc( width, height, n_channels );

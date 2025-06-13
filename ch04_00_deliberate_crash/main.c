@@ -51,7 +51,7 @@ void function_that_crashed() {
 
 void some_intermediate_function() { function_that_crashed(); }
 
-int main() {
+int main( void ) {
   some_intermediate_function();
   printf( "program finished normally\n" ); // you should see this in a terminal if program didn't crash
   return 0;
