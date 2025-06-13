@@ -18,7 +18,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 extern "C" {
 #endif
 
-EXPORT_SEC void second();
+EXPORT_SEC void second( void );
 
 #ifdef __cplusplus
 }

@@ -12,7 +12,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 extern "C" {
 #endif
 
-void second();
+void second( void );
 
 #ifdef __cplusplus
 }

@@ -11,6 +11,6 @@ If you apply `clang-format` to these files it will format them using the .clang-
 
 #include <stdio.h>
 
-void second() {
+void second( void ) {
   
   printf("Hi, from second.c!\n"); }

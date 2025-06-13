@@ -16,7 +16,7 @@ ASan:
 
 #include <stdlib.h>
 
-void my_func() {
+void my_func( void ) {
   int* x = malloc( 16 * sizeof( int ) );
   x[16]  = 0; // out of bounds of memory ( heap overrun )
               // memory is not freed

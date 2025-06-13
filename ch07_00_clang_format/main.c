@@ -14,7 +14,7 @@ If you apply `clang-format` to these files it will format them using the .clang-
 
 
 
-int main( ) {
+int main( void ) {
     printf(   "hi from main()!\n"   );
 
     

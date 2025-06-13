@@ -6,6 +6,6 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 #include "second.h" // include any symbol 'export' from the declarations
 #include <stdio.h>
 
-void second() {
+void second( void ) {
 	printf( "Hi, from second.c!\n" );
 }

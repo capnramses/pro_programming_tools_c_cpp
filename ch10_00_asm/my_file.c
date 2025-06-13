@@ -9,6 +9,6 @@ Using GCC:
 
 #include <stdio.h>
 
-void my_print() {
+void my_print( void ) {
   printf("hi from the lib!\n");
 }

@@ -6,6 +6,4 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 
 #include <stdio.h>
 
-void second() {
-	printf( "Hi, from second.c!\n" );
-}
+void second( void ) { printf( "Hi, from second.c!\n" ); }
