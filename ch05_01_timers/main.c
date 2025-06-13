@@ -21,7 +21,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 uint64_t frequency = 1000000, offset;
 
 // initialise timer variables for build's platform
-void init_timer() {
+void init_timer( void ) {
 #ifdef _WIN32
   {
     uint64_t counter;
@@ -34,7 +34,7 @@ void init_timer() {
     mach_timebase_info_data_t info;
     mach_timebase_info( &info );
     frequency = ( info.denom * 1e9 ) / info.numer;
-    offset = mach_absolute_time();
+    offset    = mach_absolute_time();
   }
 #else
   {
@@ -47,7 +47,7 @@ void init_timer() {
 }
 
 // get the current time in seconds with up to nanosecond precision
-double get_seconds() {
+double get_seconds( void ) {
 #ifdef _WIN32
   {
     uint64_t counter = 0;
@@ -78,7 +78,7 @@ int main( void ) {
   int sum = 0;
   for ( int i = 0; i < 10000; i++ ) {
     sum++;
-    printf( "sum = %i\n", i );
+    printf( "sum = %i\n", sum );
   }
 
   double end_s     = get_seconds();
