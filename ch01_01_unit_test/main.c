@@ -9,7 +9,7 @@ Repository: https://github.com/capnramses/pro_programming_tools_c_cpp
 /* trivial function to add two integers */
 int my_adder( int a, int b ) { return a + b; }
 
-void run_tests() {
+void run_tests( void ) {
   int a_inputs[3]         = { 0, 100, -100 };
   int b_inputs[3]         = { 0, -200, 200 };
   int expected_outputs[3] = { 0, -100, 100 };

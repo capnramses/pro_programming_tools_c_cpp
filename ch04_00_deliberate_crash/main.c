@@ -44,12 +44,12 @@ Getting the list of strings in the stack trace requires system-specific calls.
 
 int* ptr = NULL;
 
-void function_that_crashed() {
+void function_that_crashed( void ) {
   int value = *ptr; // should crash here. dereferencing a null pointer.
   printf( "value %i\n", value );
 }
 
-void some_intermediate_function() { function_that_crashed(); }
+void some_intermediate_function( void ) { function_that_crashed(); }
 
 int main( void ) {
   some_intermediate_function();

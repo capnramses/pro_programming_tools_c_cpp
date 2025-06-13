@@ -15,21 +15,21 @@ To tabulate profiling results after running:
 
 #include <stdio.h>
 
-void great_greatchild() {
+void great_greatchild( void ) {
   for ( int i = 0; i < 0x10000000; i++ ) { ; }
 }
 
-void grandchild() {
+void grandchild( void ) {
   for ( int i = 0; i < 0x1000000; i++ ) { ; }
   great_greatchild();
 }
 
-void child() {
+void child( void ) {
   for ( int i = 0; i < 0x100000; i++ ) { ; }
   grandchild();
 }
 
-void parent() {
+void parent( void ) {
   for ( int i = 0; i < 0x1000; i++ ) { ; }
   child();
 }
